@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
+    MenuComponent,
     AppComponent,
   ],
   imports: [
