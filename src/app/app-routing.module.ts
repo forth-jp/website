@@ -5,6 +5,7 @@ import { LinksComponent } from './components/links/links.component';
 
 const routes: Routes = [
   { path: '', component: TopComponent },
+  { path: 'links', component: LinksComponent },
   { path: '**', redirectTo: '' },
 ];
 
