@@ -1,7 +1,26 @@
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+
   ul {
     display: flex;
-    flex-flow: row;
+    height: 48px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
+  }
+
+  li {
+    padding: 0 24px;
+    color: #909090;
+  }
+
+  li:hover {
+    color: #3f3f3f;
+    cursor: pointer;
   }
 }
