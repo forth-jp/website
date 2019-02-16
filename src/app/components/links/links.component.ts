@@ -4,5 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: 'links.component.html',
   styleUrls: ['links.component.scss'],
 })
-export class LinksComponent {
-}
+export class LinksComponent {}
