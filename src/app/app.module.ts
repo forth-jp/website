@@ -7,6 +7,8 @@ import { faHome, faLink, faUsers, faRocket } from '@fortawesome/free-solid-svg-i
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 library.add(faHome, faLink, faUsers, faRocket);
 
@@ -19,6 +21,7 @@ library.add(faHome, faLink, faUsers, faRocket);
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent],
