@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { TopComponent } from './components/top/top.component';
 import { LinksComponent } from './components/links/links.component';
 import { TutorialsComponent } from './components/tutorials/tutorials.component';
@@ -16,7 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [TopComponent, LinksComponent, TutorialsComponent, AboutComponent],
-  imports: [RouterModule.forRoot(routes), FontAwesomeModule],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }

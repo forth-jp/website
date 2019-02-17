@@ -1,8 +1,17 @@
-<nav>
+<nav id="large">
   <ul>
-    <li routerLink="/">HOME</li>
+    <li routerLink="/">ホーム</li>
     <li routerLink="/tutorials">チュートリアル</li>
     <li routerLink="/about">コミュニティについて</li>
     <li routerLink="/links">リンク集</li>
+  </ul>
+</nav>
+
+<nav id="small">
+  <ul>
+    <li routerLink="/"><fa-icon [icon]="['fas', 'home']"></fa-icon><br>ホーム</li>
+    <li routerLink="/tutorials"><fa-icon [icon]="['fas', 'rocket']"></fa-icon><br>チュートリアル</li>
+    <li routerLink="/about"><fa-icon [icon]="['fas', 'users']"></fa-icon><br>コミュニティ</li>
+    <li routerLink="/links"><fa-icon [icon]="['fas', 'link']"></fa-icon><br>リンク集</li>
   </ul>
 </nav>

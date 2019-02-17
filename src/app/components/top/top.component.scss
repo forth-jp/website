@@ -3,10 +3,16 @@
   margin-bottom: 50px;
 
   img {
-    max-height: 90px;
+    max-width: 300px;
   }
 }
 
 #welcome {
   text-align: center;
+}
+
+@media screen and (max-width: 680px) {
+  #logo {
+    margin-bottom: 25px;
+  }
 }

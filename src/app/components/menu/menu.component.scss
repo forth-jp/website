@@ -1,9 +1,11 @@
-nav {
+#large {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+  background-color: white;
+  z-index: 1;
 
   ul {
     padding: 0;
@@ -17,7 +19,6 @@ nav {
   }
 
   li {
-    margin: 0;
     padding: 0 24px;
     color: #909090;
     outline: none;
@@ -26,5 +27,45 @@ nav {
   li:hover {
     color: #3f3f3f;
     cursor: pointer;
+  }
+}
+
+#small {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  box-shadow: 0 0 4px rgba(0,0,0,.14), 0 -4px 8px rgba(0,0,0,.20);
+  background-color: white;
+  z-index: 1;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 5px;
+    text-align: center;
+    font-size: 11px;
+    outline: none;
+    color: #394694;
+
+    fa-icon {
+      font-size: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #large {
+    display: none;
+  }
+  #small {
+    display: block;
   }
 }
